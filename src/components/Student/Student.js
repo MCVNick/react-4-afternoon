@@ -24,10 +24,10 @@ export default class Student extends Component {
     return (
       <div className="box">
         <h1>Student</h1>
-        {console.log(first_name, last_name)}
         <h1>{first_name} {last_name}</h1>
         <h3>Grade: {grade}</h3>
         <h3>Email: {email}</h3>
+        <button onClick={() => this.props.history.goBack()}>Back</button>
       </div>
     )
   }
